@@ -33,4 +33,8 @@ class MyViewFragment:CommonRecyclerViewFragment<CommonViewData>() {
     override fun doRefresh(adapterData: List<CommonViewData>) {
         super.doRefresh(adapterData)
     }
+
+    override fun onRecyclerViewItemClick(view: View, position: Int) {
+        Utils.showCustomConfirmationDialog(activity!!,"Ajaya","Open","Hi I M Ajaya",null);
+    }
 }
